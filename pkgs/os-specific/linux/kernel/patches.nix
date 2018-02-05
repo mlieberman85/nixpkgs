@@ -56,6 +56,11 @@ rec {
       patch = ./genksyms-fix-segfault.patch;
     };
 
+  request-key_fix_path =
+    { name = "request-key-fix-path";
+      patch = ./request-key-fix-path.patch;
+    };
+
   cpu-cgroup-v2 = import ./cpu-cgroup-v2-patches;
 
   tag_hardened = rec {
